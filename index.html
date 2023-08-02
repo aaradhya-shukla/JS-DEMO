@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+<body style="background-color: aqua;" id="body">
+    <br>
+    <div class="container">
+        
+        <form id="my-form">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="name" placeholder="enter name">  
+                <label for="name" class="form-label">UserName</label>     
+            </div>
+            <div class="form-floating">
+                <input type="number" class="form-control" id="expense" placeholder="1000">
+                <label for="expense" class="form-label">Expenditure</label>         
+            </div>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="description" placeholder="write a description">  
+                <label for="description" class="form-label">Description</label>     
+            </div>
+            <label for="category" class="form-label">Category</label>
+            <select id="category" class="form-control">
+                <option value="fuel">fuel</option>
+                <option value="movies">movies</option>
+                <option value="food">food</option>
+                <option value="clothes">clothes</option>
+            </select>
+            <BR>
+
+            <input type="submit" id="add" value="ADD EXPENSE">
+            <br>
+            
+        </form>
+        <ul id="line" list-style-type="circle">
+            
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
